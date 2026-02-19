@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Killian Cottrelle"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnUniversiteLaval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Université Laval"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnDepartement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Département de génie électrique et de génie informatique"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon Profil" />
+
+</LinearLayout>
