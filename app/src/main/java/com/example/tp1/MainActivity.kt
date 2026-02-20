@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     )
 
     val urlDepartment = "https://www.ulaval.ca/etudes/programmes/baccalaureat-en-genie-logiciel"
-    val urlGoogleMaps = "https://www.openstreetmap.org/way/27736895"
+    val urlGoogleMaps = "https://www.google.com/maps/place/Universit%C3%A9+Laval/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

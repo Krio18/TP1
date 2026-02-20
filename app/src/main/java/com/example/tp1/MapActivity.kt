@@ -1,5 +1,6 @@
 package com.example.tp1
 
+import android.content.Intent
 import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -18,7 +19,19 @@ class MapActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
         webView.settings.setSupportZoom(true)
-        webView.webViewClient = WebViewClient()
+        webView.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(
+                view: WebView?,
+                request: android.webkit.WebResourceRequest?
+            ): Boolean {
+                val uri = request?.url ?: return false
+
+                return when (uri.scheme) {
+                    "http", "https" -> false
+                    else -> true
+                }
+            }
+        }
 
         webView.loadUrl(url)
 
